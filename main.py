@@ -1,3 +1,5 @@
+# This file is work-in-progress and it contains elements intended for future development
+
 import json
 import os.path
 import string
@@ -128,6 +130,7 @@ class ResponsibleLLM:
         self.dump_history()
         sys.exit(0)
 
+
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--model_path",
@@ -146,5 +149,5 @@ if __name__ == "__main__":
     args = parser.parse_args(argv[1:])
 
     logging.info(f"CmdLine parameters: {args}")
-    bot = ResponsibleLLM(model_path=args.model_path, config_path=args.config_path)
+    bot = ResponsibleLLM(model_path=args.model_path, config_path=args.config_path, validate_input=args.validate_input)
     bot.interactive()
