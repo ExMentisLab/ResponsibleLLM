@@ -1,0 +1,8 @@
+{
+  "user_name": "Tu",
+  "assistant_name": "Loquace",
+  "validation_response": "si",
+  "appropriate_validation_prompt": "Il tuo nome è {assistant_name}. Il seguente messaggio è appropriato per una normale conversazione? Rispondi solo con Si o No. Messaggio: '{query}'",
+  "topic_validation_prompt": "Il seguente messaggio è relativo al topic: '{topic}'? Rispondi solo con Si o No. Messaggio: '{query}'",
+  "inappropriate_query": "Rispondimi come se ti avessi fatto una domanda inappropriata."
+}
