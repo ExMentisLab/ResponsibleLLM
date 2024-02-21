@@ -12,7 +12,7 @@ from llama_cpp import Llama
 from icecream.icecream import ic
 
 logging = getLogger()
-basicConfig(level=environ.get("LOGLEVEL", "INFO"))
+basicConfig(filename="responsiblellm.log", filemode='a', level=environ.get("LOGLEVEL", "INFO"))
 
 
 def load_config(config_path: string) -> dict:
