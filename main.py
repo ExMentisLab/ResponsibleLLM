@@ -44,7 +44,7 @@ class ResponsibleLLM:
         self.validate_input = validate_input
         self.validate_output = validate_output
 
-        self.llm = Llama(model_path=self.model_path, n_threads=8, verbose=False, chat_format="chatml")
+        self.llm = Llama(model_path=self.model_path, n_threads=8, verbose=False, chat_format="chatml", n_ctx=0)
 
         self.assistant_name = config['assistant_name']
         self.user_name = config['user_name']
